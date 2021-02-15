@@ -49,6 +49,8 @@ void *workerPrime(void *param) {
     int prime[*num];
     int primeIdx = 0;
 
+    /* Using the Sieve of Eratosthenes algorithm to find primes
+     * Complexity is O(n loglog(n)) */
     for (int k = 2; k <= *num; ++k) {
         if (isPrime[k]) {
             prime[primeIdx++] = k;
