@@ -66,4 +66,3 @@ void *workerPrime(void *param) {
     }
 }
 
-
